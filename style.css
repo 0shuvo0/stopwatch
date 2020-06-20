@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	font-family: 'Poppins',Arial,sans-serif;
+	background: #3C3D51;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 250px;
+	height: 150px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	background: #336374;
+}
+
+
+.container nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	font-size: 14px;
+	color: #262626;
+}
+nav.top{
+	padding: 10px;
+}
+
+
+.nav{
+	margin-bottom: 5px;
+}
+.nav i{
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	transition: background 0.2s;
+	border-radius: 2px;
+}
+.nav i:hover{
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+.container .clock{
+	background: #18323D;
+	height: 70px;
+	transform: scaleX(1.1);
+	display: flex;
+	border-radius: 1px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.clock .cell{
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cell input{
+	width: 40px;
+	border: none;
+	outline: none;
+	margin: 0;
+	height: 40px;
+	font-size: 30px;
+	text-align: center;
+	background: transparent;
+	color: #EAEAEA;
+	font-weight: 300;
+}
+input::placeholder{
+	color: #EAEAEA;
+}
+.cell .title{
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	color: #EAEAEA;
+}
+
+
+.container.day{
+	background: linear-gradient(-25deg, #FF397D, #FEAD80);
+}
+.container.day .clock{
+	background: linear-gradient(15deg, #FF397D, #FEAD80);
+}
