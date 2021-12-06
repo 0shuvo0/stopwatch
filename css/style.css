@@ -59,24 +59,25 @@ nav.top{
 	height: 70px;
 	transform: scaleX(1.1);
 	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
 	border-radius: 1px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
 .clock .cell{
-	width: 33.33%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .cell input{
-	width: 40px;
+	width: 44px;
 	border: none;
 	outline: none;
 	margin: 0;
 	height: 40px;
-	font-size: 30px;
+	font-size: 26px;
 	text-align: center;
 	background: transparent;
 	color: #EAEAEA;
